@@ -1,0 +1,173 @@
+*{
+    
+}
+.header{
+    background-image: url(Manali-Sanctuary.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 2000px;
+}
+.container{
+    width: 100%;
+    max-width: 1400px;
+   margin: 0 auto ;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.menus{
+padding:25px;
+display: flex;
+padding-left: 300px;
+float: left;
+
+}
+.menus ul li{
+    float: left;
+    list-style-type: none;
+    padding-left: 60px;
+    border-bottom: 1px solid blue ;
+}
+.menus ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color:#000000;
+    float: left;
+    -webkit-text-stroke: 0.5px black;
+    font-family: monospace;
+   
+}
+ h1{
+   padding-right: 40px;
+    padding-top: 250px;
+    font-size: 70px;
+    color: #ffffff;
+  text-align: center;
+  font-weight: bolder;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+
+ }
+ p{
+   text-align: center;
+    color: #000000;
+    padding-bottom: -50px;
+    font-size: 20px;
+    padding-bottom: 50px;
+    -webkit-text-stroke:0.5px #000000;
+ }
+
+  h6{
+    text-align: center  ;
+    font-size: 40px;
+    padding-bottom: 190px;
+    color: #080808;
+  }
+  .sub{
+    text-align: center;
+  }
+  button{
+    border-style: hidden;
+    border-radius: 35px;
+    width: 24%;
+    height: 72px;
+    color: rgb(100, 100, 100);
+    background-color: coral;
+    font-size: 35px;
+   margin-bottom: 240px;
+  }
+  button:hover{
+    color: black;
+  }
+
+    h2{
+        text-align: center; 
+        font-size: 60px;
+        padding-top: 150px;
+    }
+    h3{
+        font-size: 25px;
+        text-align: center;
+        
+    }
+.container .box{
+    position: relative;
+    width: 320px;
+    background-color: #fff;
+    padding: 100px 40px 60px;
+    box-shadow:  0 15px 45px rgb(95, 94, 94);
+    border: 1px whitesmoke solid;
+    background-color: #fff;
+    
+
+}
+.container .box1{
+    position: relative;
+    width: 320px;
+    background-color: #fff;
+    padding: 100px 40px 60px;
+    box-shadow:  0 15px 45px rgb(82, 82, 82);
+    border: 1px whitesmoke solid;
+    background-color: gainsboro;
+
+}
+.container.box2{
+    position: relative;
+    width: 320px;
+    background-color: #fff;
+    padding: 100px 40px 60px;
+    box-shadow:  0 15px 45px rgb(82, 82, 82);
+    border: 1px whitesmoke solid;
+    background-color: gainsboro;
+}
+
+.box2{
+    position: relative;
+    height: 200px;
+     width: 320px;
+     background-color: #fff;
+     padding: 100px 40px 60px;
+     box-shadow:  0 15px 45px rgb(82, 82, 82);
+     border: 1px whitesmoke solid;
+     margin-top: 50px;
+     background-repeat: no-repeat;
+     background-size: 550px;
+}
+.box3{
+    position: relative;
+    height: 200px;
+     width: 320px;
+     background-color: #fff;
+     padding: 100px 40px 60px;
+     box-shadow:  0 15px 45px rgb(82, 82, 82);
+     border: 1px whitesmoke solid;
+     margin-top: 50px;
+     background-repeat: no-repeat;
+     background-size: 550px;
+    }
+
+    h4{
+       
+       text-align: center top;
+        font-size: 30px;
+        color: #080707;
+        display: block;
+    }
+  
+    .bgbox{
+        border: solid 1px;
+        height: 500px;
+
+    }
+  
+   
+    .colm6{
+   width:50% ;
+   display: inline-block;
+    }
+   .fox{
+    width: 50%;
+    display: inline-block;
+    border: solid 1px;
+    height: 100px;
+   }

@@ -166,8 +166,24 @@ float: left;
    display: inline-block;
     }
    .fox{
-    width: 50%;
+    width: 49%;
     display: inline-block;
     border: solid 1px;
-    height: 100px;
+    height: 300px;
+    background-size: 500px;
    }
+   .bgbox{
+    height: 606px;
+    float: left;
+    width:90%
+   }
+.fox2{
+    height: 500px;
+}
+.bottombox{
+    width: 320px;
+    border: 1px solid black;
+    height: 300px;
+    display: inline-block;
+    margin-top: 5%;
+}

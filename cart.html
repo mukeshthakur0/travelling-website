@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title> 
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div id="total">
+            <!-- Total price will be displayed here -->
+        </div>
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="processPayment()">Proceed to Payment</button>
+        <button onclick="backToMenu()">Back to Menu</button> <!-- Added Back to Menu button -->
+    </div>
+   <script>
+    // Function to retrieve cart items from localStorage
+function getCartItems() {
+    // Check if localStorage is supported by the browser
+    if (typeof(Storage) !== "undefined") {
+        // Retrieve cart items from localStorage
+        const cartItems = localStorage.getItem("cartItems");
+
+        // If cart items exist, parse and return them, otherwise return an empty array
+        return cartItems ? JSON.parse(cartItems) : [];
+    } else {
+        // If localStorage is not supported, return an empty array
+        return [];
+    }
+}
+
+// Function to display cart items
+function displayCartItems() {
+    // Get the cart container element
+    const cartContainer = document.getElementById("cart-items");
+
+    // Get the total element
+    const totalElement = document.getElementById("total");
+
+    // Get the cart items from localStorage
+    const cartItems = getCartItems();
+
+    // Clear the previous cart items
+    cartContainer.innerHTML = "";
+
+    // Initialize total price
+    let totalPrice = 0;
+
+    // Loop through each cart item and display it
+    cartItems.forEach(item => {
+        // Create a div element for each cart item
+        const itemDiv = document.createElement("div");
+        itemDiv.classList.add("cart-item");
+
+        // Display item name and price
+        itemDiv.innerHTML = `
+            <p>${item.name} - Rs ${item.price.toFixed(2)}</p>
+        `;
+
+        // Append the item div to the cart container
+        cartContainer.appendChild(itemDiv);
+
+        // Add item price to total price
+        totalPrice += parseFloat(item.price);
+    });
+
+    // Display total price
+    totalElement.textContent = `Total: Rs ${totalPrice.toFixed(2)}`;
+}
+
+// Function to clear the cart
+function clearCart() {
+    // Clear cart items from localStorage
+    localStorage.removeItem("cartItems");
+
+    // Display updated cart items
+    displayCartItems();
+}
+
+// Call displayCartItems function when the page loads
+window.addEventListener("load", displayCartItems);
+
+// Function to handle back to menu
+function backToMenu() {
+    // Redirect back to menu page
+    window.location.href = "menu.html";
+}
+
+// Function to handle payment processing
+function processPayment() {
+    // Your logic to handle payment
+    alert("Redirecting to payment gateway...");
+    window.location.href = "process_payment.html";
+}
+
+   </script>
+</body>
+</html>

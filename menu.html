@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="cart.html">Cart</a></li> <!-- Link to Cart page -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Butter Chicken</h3>
+                <p>Marinated chicken cooked in a rich tomato and butter gravy.</p>
+                <p>Price: Rs 400</p>
+                <img src="images/butter-chicken--600x600.jpg" alt="">
+                <button class="add-to-cart" onclick="addToCart('Butter Chicken', 400)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Paneer Tikka</h3>
+                <p>Marinated paneer cubes grilled to perfection.</p>
+                <p>Price: Rs 200</p>
+                <img src="images/download.jpeg" alt="">
+                <button class="add-to-cart" onclick="addToCart('Paneer Tikka', 200)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Vegetable Biryani</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 300</p>
+                <img src="images/veg.webp" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 300)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Dal Makhani</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 220</p>
+                <img src="images/images.jpeg" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 220)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Matar-Paneer</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 200</p>
+                <img src="images/Matar-Paneer-500x500.jpg" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 200)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Naan</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 50</p>
+                <img src="images/naan-recipe-2.jpg" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 50)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Chole Bhatura</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 100</p>
+                <img src="images/chole-bhature.webp" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 100)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Rajma Chawal</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 120</p>
+                <img src="images/Authentic-Punjabi-Rajma-Recipe.jpg" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 120)">Add to Cart</button>
+            </div>
+
+        </div>
+        <br>
+        <h2>Drinks</h2>
+        <div class="menu-items">
+           
+            <div class="menu-item">
+                <h3>Coffee</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 50</p>
+                <img src="images/cof.jpg" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 50)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Tea</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 15</p>
+                <img src="images/tea.webp" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 15)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Mango Shake</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 40</p>
+                <img src="images/mango_shake_zdish.webp" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 40)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Lemon Soda</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 20</p>
+                <img src="images/lemon-soda.jpg" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 20)">Add to Cart</button>
+            </div>
+        </div>
+        <h2>Sweets</h2>
+        <div class="menu-items">
+            
+            <div class="menu-item">
+                <h3>Gulab Jamun</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 25</p>
+                <img src="images/gulab.jpg" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 25)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Ras Malai</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 35</p>
+                <img src="images/ras malia.jpg" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 35)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Rasgulla</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 25</p>
+                <img src="images/rasgulla.webp" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 25)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <h3>Icecream</h3>
+                <p>Aromatic rice dish cooked with mixed vegetables and spices.</p>
+                <p>Price: Rs 30</p>
+                <img src="images/homemade-ice-cream.jpg" alt="">
+                <button class="add-to-cart" onclick="addToCart('Vegetable Biryani', 30)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container1">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+            <ul class="social-icons">
+                <li><a href="#" class="fa fa-facebook-f">Facebook</a></li>
+                <li><a href="#" class="fa fa-instagram">Instagram</a></li>
+                <li><a href="#" class="fa fa-twitter">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Online Food Ordering</p>
+        </div>
+    </footer>
+
+    <script>
+        function addToCart(itemName, price) {
+            // Check if localStorage is supported by the browser
+            if (typeof(Storage) !== "undefined") {
+                // Retrieve existing cart items from localStorage
+                let cartItems = localStorage.getItem("cartItems");
+
+                // If no cart items exist, initialize an empty array
+                if (!cartItems) {
+                    cartItems = [];
+                } else {
+                    // Parse the existing cart items from JSON
+                    cartItems = JSON.parse(cartItems);
+                }
+
+                // Add the new item to the cart
+                cartItems.push({ name: itemName, price: price });
+
+                // Store the updated cart items back to localStorage
+                localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+                // Alert the user that the item has been added to cart
+                alert("Item added to cart!");
+            } else {
+                // Alert the user if localStorage is not supported
+                alert("Sorry, your browser does not support the 'localStorage' feature. Please try again with a different browser.");
+            }
+        }
+    </script>
+</body>
+</html>
